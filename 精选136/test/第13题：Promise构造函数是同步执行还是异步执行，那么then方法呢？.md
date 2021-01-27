@@ -6,7 +6,9 @@
 
 解答：
 
+Promise是立即执行函数，所以Promise构造函数在被new的时候会同步执行
 
+then方法是在同步函数中的resolve执行的时候才会执行，所以是异步执行
 
 ```javascript
 
