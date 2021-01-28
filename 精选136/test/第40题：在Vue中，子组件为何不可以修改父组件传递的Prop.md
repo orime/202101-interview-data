@@ -6,7 +6,15 @@
 
 解答：
 
-
+- 不可以修改：单项数据流原则，禁止修改方便追踪数据变化
+- 监控修改：大概是用了Proxy()
+```js
+Proxy(obj, {
+  set(tgt, p, value, receiver) {
+    Relect.set(tgt, p, value, receiver)
+  }
+})
+```
 
 ```javascript
 
