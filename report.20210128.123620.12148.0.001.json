@@ -1,0 +1,298 @@
+
+{
+  "header": {
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20210128.123620.12148.0.001.json",
+    "dumpEventTime": "2021-01-28T12:36:20Z",
+    "dumpEventTimeStamp": "1611808580549",
+    "processId": 12148,
+    "cwd": "d:\\learnProject\\15.my-serious-project\\interview\\202101-interview-data",
+    "commandLine": [
+      "node",
+      "d:\\learnProject\\15.my-serious-project\\interview\\202101-interview-data\\精选136\\test\\tempCodeRunnerFile.md"
+    ],
+    "nodejsVersion": "v12.3.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.3.0",
+      "v8": "7.4.288.27-node.17",
+      "uv": "1.28.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.38.0",
+      "napi": "4",
+      "llhttp": "1.1.3",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1b",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v12.3.0/node-v12.3.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.3.0/node-v12.3.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.3.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.17763",
+    "osVersion": "Windows 10 Enterprise LTSC 2019",
+    "osMachine": "x86_64",
+    "host": "G-PC-036"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff707015589",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+9161"
+    },
+    {
+      "pc": "0x00007ff707018e74",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+23732"
+    },
+    {
+      "pc": "0x00007ff707017e98",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+19672"
+    },
+    {
+      "pc": "0x00007ff707100bfb",
+      "symbol": "uv_loop_fork+47931"
+    },
+    {
+      "pc": "0x00007ff7074387fe",
+      "symbol": "v8::internal::Parser::ReportMessageAt+206"
+    },
+    {
+      "pc": "0x00007ff70740c87a",
+      "symbol": "v8::internal::wasm::StreamingDecoder::Fail+666"
+    },
+    {
+      "pc": "0x00007ff7074a2ccc",
+      "symbol": "v8::internal::Heap::CreateFillerObjectAt+2972"
+    },
+    {
+      "pc": "0x00007ff7074e05ac",
+      "symbol": "v8::internal::Factory::NewFixedArrayWithFiller+60"
+    },
+    {
+      "pc": "0x00007ff7074e0560",
+      "symbol": "v8::internal::Factory::NewUninitializedFixedArray+64"
+    },
+    {
+      "pc": "0x00007ff7076cbfbe",
+      "symbol": "v8_inspector::V8StackTraceId::V8StackTraceId+123022"
+    },
+    {
+      "pc": "0x00007ff7077ee322",
+      "symbol": "v8::internal::OptimizingCompileDispatcher::Unblock+14882"
+    },
+    {
+      "pc": "0x00007ff707ca1e56",
+      "symbol": "v8::internal::NativesCollection<0>::GetScriptsSource+660214"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2723725312,
+    "totalCommittedMemory": 2723725312,
+    "usedMemory": 2688306424,
+    "availableMemory": 17602280,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 524288,
+        "committedMemory": 524288,
+        "capacity": 523976,
+        "used": 31712,
+        "available": 492264
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 33554432,
+        "capacity": 16767232,
+        "used": 0,
+        "available": 16767232
+      },
+      "old_space": {
+        "memorySize": 1695744,
+        "committedMemory": 1695744,
+        "capacity": 1628424,
+        "used": 1285640,
+        "available": 342784
+      },
+      "code_space": {
+        "memorySize": 688128,
+        "committedMemory": 688128,
+        "capacity": 156096,
+        "used": 156096,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 528384,
+        "committedMemory": 528384,
+        "capacity": 167120,
+        "used": 167120,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 1784172544,
+        "committedMemory": 1784172544,
+        "capacity": 1784151520,
+        "used": 1784151520,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3456,
+        "used": 3456,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 902512640,
+        "committedMemory": 902512640,
+        "capacity": 902510880,
+        "used": 902510880,
+        "available": 0
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 4.75,
+    "kernelCpuSeconds": 0.64,
+    "cpuConsumptionPercent": 107.8,
+    "maxRss": 2731843584,
+    "pageFaults": {
+      "IORequired": 674027,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 2,
+      "writes": 89
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=D:": "d:\\learnProject\\15.my-serious-project\\interview\\202101-interview-data",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "AMD_ENTRYPOINT": "vs/workbench/services/extensions/node/extensionHostProcess",
+    "ANDROID_HOME": "C:\\Users\\app\\AppData\\Local\\Android\\Sdk\\",
+    "APPDATA": "C:\\Users\\app\\AppData\\Roaming",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
+    "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
+    "ChocolateyLastPathUpdate": "132342561083472218",
+    "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\crashpad_10220_VJXRORPZHCCVVKOK",
+    "CLASSPATH": ".;C:\\Program Files\\Java\\jdk1.8.0_271\\lib\\dt.jar;C:\\Program Files\\Java\\jdk1.8.0_271\\lib\\tools.jar",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "G-PC-036",
+    "ComSpec": "C:\\Windows\\system32\\cmd.exe",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "ELECTRON_NO_ATTACH_CONSOLE": "1",
+    "ELECTRON_RUN_AS_NODE": "1",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\app",
+    "JAVA_HOME": "C:\\Program Files\\Java\\jdk1.8.0_271",
+    "LOCALAPPDATA": "C:\\Users\\app\\AppData\\Local",
+    "LOGONSERVER": "\\\\G-PC-036",
+    "NUMBER_OF_PROCESSORS": "6",
+    "NVM_HOME": "C:\\Users\\app\\AppData\\Roaming\\nvm",
+    "NVM_SYMLINK": "C:\\Program Files\\nodejs",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "undefined",
+    "OS": "Windows_NT",
+    "Path": "C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Boxstarter;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\chocolatey\\bin;C:\\Users\\app\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;D:\\system-host\\bin;C:\\Users\\app\\AppData\\Local\\Yarn\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\Java\\jdk1.8.0_271;C:\\Users\\app\\AppData\\Local\\Android\\Sdk\\\\platform-tools;C:\\Users\\app\\AppData\\Local\\Android\\Sdk\\\\emulator;C:\\Users\\app\\AppData\\Local\\Android\\Sdk\\\\tools;C:\\Users\\app\\AppData\\Local\\Android\\Sdk\\\\tools\\bin;C:\\Users\\app;C:\\Users\\app\\AppData\\Local\\Microsoft\\WindowsApps;D:\\SoftWare\\Microsoft VS Code\\bin;D:\\SoftWare\\WebStorm 2020.1.1\\bin;C:\\Program Files\\Bandizip\\;C:\\Users\\app\\AppData\\Roaming\\nvm;C:\\Users\\app\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+    "PIPE_LOGGING": "true",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "9e0a",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\Users\\app\\Documents\\WindowsPowerShell\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "SESSIONNAME": "Console",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\Windows",
+    "TEMP": "C:\\Users\\app\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\app\\AppData\\Local\\Temp",
+    "USERDOMAIN": "G-PC-036",
+    "USERDOMAIN_ROAMINGPROFILE": "G-PC-036",
+    "USERNAME": "app",
+    "USERPROFILE": "C:\\Users\\app",
+    "VERBOSE_LOGGING": "true",
+    "VSCODE_CLI": "1",
+    "VSCODE_CWD": "C:\\Windows\\System32",
+    "VSCODE_HANDLES_UNCAUGHT_ERRORS": "true",
+    "VSCODE_IPC_HOOK": "\\\\.\\pipe\\4ae59a001da9a5b72208e5e140897562-1.50.1-main-sock",
+    "VSCODE_IPC_HOOK_EXTHOST": "\\\\.\\pipe\\vscode-ipc-f8f79167-bea5-4434-a10e-c8d57d583d10-sock",
+    "VSCODE_LOGS": "C:\\Users\\app\\AppData\\Roaming\\Code\\logs\\20210128T121149",
+    "VSCODE_LOG_STACK": "false",
+    "VSCODE_NLS_CONFIG": "{\"locale\":\"zh-cn\",\"availableLanguages\":{\"*\":\"zh-cn\"},\"_languagePackId\":\"9a11e5cc0cce90e9e69be1a02ee4a373.zh-cn\",\"_translationsConfigFile\":\"C:\\\\Users\\\\app\\\\AppData\\\\Roaming\\\\Code\\\\clp\\\\9a11e5cc0cce90e9e69be1a02ee4a373.zh-cn\\\\tcf.json\",\"_cacheRoot\":\"C:\\\\Users\\\\app\\\\AppData\\\\Roaming\\\\Code\\\\clp\\\\9a11e5cc0cce90e9e69be1a02ee4a373.zh-cn\",\"_resolvedLanguagePackCoreLocation\":\"C:\\\\Users\\\\app\\\\AppData\\\\Roaming\\\\Code\\\\clp\\\\9a11e5cc0cce90e9e69be1a02ee4a373.zh-cn\\\\d2e414d9e4239a252d1ab117bd7067f125afd80a\",\"_corruptedFile\":\"C:\\\\Users\\\\app\\\\AppData\\\\Roaming\\\\Code\\\\clp\\\\9a11e5cc0cce90e9e69be1a02ee4a373.zh-cn\\\\corrupted.info\",\"_languagePackSupport\":true}",
+    "VSCODE_NODE_CACHED_DATA_DIR": "C:\\Users\\app\\AppData\\Roaming\\Code\\CachedData\\d2e414d9e4239a252d1ab117bd7067f125afd80a",
+    "VSCODE_PID": "8880",
+    "WALLABY_PRODUCTION": "true",
+    "WebStorm": "D:\\SoftWare\\WebStorm 2020.1.1\\bin;",
+    "windir": "C:\\Windows",
+    "WXDRIVE_START_ARGS=--wxdrive-setting=0 --disable-gpu --disable-software-rasterizer --enable-features": "NetworkServiceInProcess"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\Windows\\SYSTEM32\\ntdll.dll",
+    "C:\\Windows\\System32\\KERNEL32.DLL",
+    "C:\\Windows\\System32\\KERNELBASE.dll",
+    "C:\\Windows\\System32\\WS2_32.dll",
+    "C:\\Windows\\System32\\RPCRT4.dll",
+    "C:\\Windows\\System32\\ADVAPI32.dll",
+    "C:\\Windows\\System32\\msvcrt.dll",
+    "C:\\Windows\\System32\\sechost.dll",
+    "C:\\Windows\\System32\\USER32.dll",
+    "C:\\Windows\\System32\\win32u.dll",
+    "C:\\Windows\\SYSTEM32\\dbghelp.dll",
+    "C:\\Windows\\System32\\GDI32.dll",
+    "C:\\Windows\\System32\\ucrtbase.dll",
+    "C:\\Windows\\System32\\gdi32full.dll",
+    "C:\\Windows\\System32\\msvcp_win.dll",
+    "C:\\Windows\\System32\\PSAPI.DLL",
+    "C:\\Windows\\System32\\CRYPT32.dll",
+    "C:\\Windows\\System32\\MSASN1.dll",
+    "C:\\Windows\\System32\\bcrypt.dll",
+    "C:\\Windows\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\Windows\\SYSTEM32\\USERENV.dll",
+    "C:\\Windows\\System32\\profapi.dll",
+    "C:\\Windows\\SYSTEM32\\WINMM.dll",
+    "C:\\Windows\\SYSTEM32\\winmmbase.dll",
+    "C:\\Windows\\System32\\cfgmgr32.dll",
+    "C:\\Windows\\System32\\IMM32.DLL",
+    "C:\\Windows\\System32\\powrprof.dll",
+    "C:\\Windows\\system32\\uxtheme.dll",
+    "C:\\Windows\\System32\\combase.dll",
+    "C:\\Windows\\System32\\bcryptPrimitives.dll",
+    "C:\\Windows\\system32\\mswsock.dll",
+    "C:\\Windows\\System32\\kernel.appcore.dll",
+    "C:\\Windows\\system32\\napinsp.dll",
+    "C:\\Windows\\system32\\pnrpnsp.dll",
+    "C:\\Windows\\SYSTEM32\\DNSAPI.dll",
+    "C:\\Windows\\System32\\NSI.dll",
+    "C:\\Windows\\System32\\winrnr.dll",
+    "C:\\Windows\\system32\\NLAapi.dll",
+    "C:\\Windows\\system32\\wshbth.dll"
+  ]
+}
