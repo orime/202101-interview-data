@@ -4,10 +4,17 @@
 
 解答：
 
-
+- 太简单了
 
 ```javascript
-
+function transStr(str){
+  console.log(str)
+  [...str].map((s) => {
+    return s.toUppercase() === s ? s.toLowerCase() : s.toUpperCase()
+  })
+}
+const strTest = 'AbC'
+console.log(transStr(strTest))
 ```
 
 #### 总结：
