@@ -1,14 +1,3 @@
-### 第 30 题：两个数组合并成一个数组
-
-请把两个数组 ['A1', 'A2', 'B1', 'B2', 'C1', 'C2', 'D1', 'D2'] 和 ['A', 'B', 'C', 'D']，合并为 ['A1', 'A2', 'A', 'B1', 'B2', 'B', 'C1', 'C2', 'C', 'D1', 'D2', 'D']。
-
-解析： [第 30 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/39)
-
-解答：
-
-
-
-```javascript
 function mergeArr(arr1, arr2){
   const res = []
   let j = 0
@@ -27,13 +16,6 @@ function mergeArr(arr1, arr2){
 const ar1 = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2', 'D1', 'D2'];
 const ar2 = ['A', 'B', 'C', 'D']
 console.log(mergeArr(ar1, ar2))
-```
-
-#### 总结：
-
-
-
-#### 扩展：
 
 
 

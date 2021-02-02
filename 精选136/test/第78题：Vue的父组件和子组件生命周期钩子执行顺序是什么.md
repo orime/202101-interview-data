@@ -12,7 +12,10 @@
 
 #### 总结：
 
-
+1. 父组件： beforeCreate -> created -> beforeMount
+1. 子组件： -> beforeCreate -> created -> beforeMount -> mounted
+1. 父组件： -> mounted
+1. 总结：从外到内，再从内到外
 
 #### 扩展：
 

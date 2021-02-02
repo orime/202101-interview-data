@@ -7,7 +7,12 @@
 
 
 ```javascript
-
+function findStr(S, T){
+  return S.includes(T) ? S.indexOf(T) : -1
+}
+const S1 = 'abcdefg', T1 = 'cde', T2 = 'fgh'
+console.log(findStr(S1, T1)) // 2
+console.log(findStr(S1, T2)) // -1
 ```
 
 #### 总结：
