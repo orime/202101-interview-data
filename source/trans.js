@@ -37,12 +37,12 @@ fs.readFile('./01.带目录和issue链接的题目.md', 'utf8', (err, data) => {
   const regExp = /.*###\s(第\s\d\s题：.+?)\n[\s\S]+?<br\/>/g
   pureData.replace(/.*###\s(第\s\d+\s题：.+)\s+([\s\S]+?)<br\/>/g, (content, $1, $2) => {
     console.log('content', $1, { $2 })
-    fs.rmdir('./test', () => {
-      fs.mkdir('./test', () => {
+    fs.rmdir('../init_subjects', () => {
+      fs.mkdir('../init_subjects', () => {
         $1 = $1.replace(/[\s|\?|<|>]/g, '')
         $1 = $1.replace(/\//g, '或')
         $1 = $1.replace(/:/g, '：')
-        fs.writeFile(`./test/${$1}.md`, `${content.replace(/<br\/>/, '')}解答：
+        fs.writeFile(`../init_subjects/${$1}.md`, `${content.replace(/<br\/>/, '')}解答：
 
 
 
