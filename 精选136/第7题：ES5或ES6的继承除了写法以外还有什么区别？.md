@@ -18,7 +18,7 @@
 
 1. `class` 声明会提升，但不会初始化赋值。`Foo` 进入暂时性死区，类似于 `let`、`const` 声明变量。
 
-```
+```js
 const bar = new Bar(); // it's ok
 function Bar() {
   this.bar = 42;
@@ -34,7 +34,7 @@ class Foo {
 
 1. `class` 声明内部会启用严格模式。
 
-```
+```js
 // 引用一个未声明的变量
 function Bar() {
   baz = 42; // it's ok
@@ -51,7 +51,7 @@ const foo = new Foo();
 
 1. `class` 的所有方法（包括静态方法和实例方法）都是不可枚举的。
 
-```
+```js
 // 引用一个未声明的变量
 function Bar() {
   this.bar = 42;
