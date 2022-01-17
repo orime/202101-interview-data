@@ -29,10 +29,10 @@ function debounce(func, wait) {
 // * 修复 this 指向 & 正确获取 event 对象
 function debounce1(func, wait) {
   let timeout;
-  return function () {
+  return function (...args) {
     clearTimeout(timeout);
     const context = this;
-    timeout = setTimeout((...args) => {
+    timeout = setTimeout(() => {
       func.apply(context, args); // * this 指向 <div id="container">4</div>
     }, wait);
   };
@@ -76,7 +76,9 @@ function debounce3_1(func, wait, immediate) {
       timerId = setTimeout(() => {
         func.apply(context, args);
       }, wait);
-      if (canCall) func(...args);
+      if (canCall) {
+        func(...args);
+      }
     } else {
       clearTimeout(timerId);
       timerId = setTimeout(() => {
@@ -86,7 +88,7 @@ function debounce3_1(func, wait, immediate) {
   };
 }
 
-// * 带取消和返回值
+// * 带取消
 function debounce4(func, wait, immediate) {
   let timerId;
   const debounce = function (...args) {
@@ -109,6 +111,8 @@ function debounce4(func, wait, immediate) {
 
   debounce.cancel = function () {
     // clearTimeout(timerId); // * 不好使，必须要用 timerId = null
+    console.log(timerId, 'timerId')
+
     timerId = null;
   };
 
@@ -119,7 +123,7 @@ function debounce4(func, wait, immediate) {
 // container.onmousemove = debounce1(getUserAction, 100);
 // container.onmousemove = debounce2(getUserActionE, 100); // * event 对象测试
 // container.onmousemove = debounce3(getUserActionE, 100, true); // * immediate 对象测试
-// container.onmousemove = debounce3(getUserActionE, 500, true); // * immediate 对象测试
+// container.onmousemove = debounce3_1(getUserActionE, 500, true); // * immediate 对象测试
 // * 带取消测试
 
 var setUseAction = debounce4(getUserAction, 500, true);
