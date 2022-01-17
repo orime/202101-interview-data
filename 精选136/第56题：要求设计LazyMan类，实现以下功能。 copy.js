@@ -10,9 +10,11 @@ class LazyManClass {
   sleep(duration) {
     const that = this;
     const task = () => {
-      console.log(`等待了${duration}秒`);
-      that.next();
-    };
+      setTimeout(() => {
+          console.log(`等待了${duration}秒`);
+          that.next();
+      }, duration*1000)
+    }
     this.taskList.push(task);
     return this;
   }
@@ -29,9 +31,11 @@ class LazyManClass {
   sleepFirst(duration) {
     const that = this
     const task = () => {
-      console.log(`等待了${duration}秒`)
-      that.next()
-    };
+      setTimeout(() => {
+        console.log(`等待了${duration}秒...`)
+        that.next()
+      }, duration*1000)
+    }
     this.taskList.unshift(task);
     return this;
   }

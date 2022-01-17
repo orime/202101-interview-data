@@ -83,10 +83,27 @@ div.child {
 }
 ```
 
-```javascript
+7. position：absolute定位撑开
 
+```css
+    <style>
+      #box {
+        width: 100px;
+        height: 100px;
+        background-color: brown;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box"></div>
+  </body>
 ```
-
 #### 总结：
 
 #### 扩展：
