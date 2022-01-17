@@ -17,6 +17,7 @@ new 操作符作用一个构造器的时候，会先在构造函数内部创建�
 
 
 ```javascript
+❌
 function new(construct, ...args){
     const obj = Object.create(null)
     const res = contruct.call(obj, args)
